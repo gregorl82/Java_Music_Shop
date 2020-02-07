@@ -23,6 +23,11 @@ public class PianoTest {
     }
 
     @Test
+    public void hasAMaker(){
+        assertEquals("Steinway", piano.getMaker());
+    }
+
+    @Test
     public void hasAnInstrumentType(){
         assertEquals("Percussion", piano.getInstrumentType());
     }
