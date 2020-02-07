@@ -10,7 +10,7 @@ public class SheetMusicTest {
 
     @Before
     public void before(){
-        sheetMusic = new SheetMusic();
+        sheetMusic = new SheetMusic("Eine kleine Nachtmusik", "Wolfgang Amadeus Mozart", "String ensemble");
     }
 
     @Test
