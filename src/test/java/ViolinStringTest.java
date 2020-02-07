@@ -25,18 +25,23 @@ public class ViolinStringTest {
 
     @Test
     public void hasABoughtPrice(){
-        assertEquals(3.2, violinString.getBoughtPrice(), 0.00);
+        assertEquals(3.2, violinString.getBoughtPrice(), 0.01);
     }
 
     @Test
     public void hasASellPrice(){
-        assertEquals(4.75, violinString.getSellPrice(), 0.00);
+        assertEquals(4.75, violinString.getSellPrice(), 0.01);
     }
 
     @Test
     public void canSetSellPrice(){
         violinString.setSellPrice(5.25);
-        assertEquals(5.25, violinString.getSellPrice(), 0.00);
+        assertEquals(5.25, violinString.getSellPrice(), 0.01);
+    }
+
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(1.55, violinString.calculateMarkup(), 0.01);
     }
 
     @Test
