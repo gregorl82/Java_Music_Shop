@@ -2,17 +2,17 @@ package accessories;
 
 public class ViolinString extends Accessory {
 
-    private String note;
+    private StringNote note;
     private String material;
 
-    public ViolinString(String name, String maker, String note, String material, double boughtPrice, double sellPrice) {
+    public ViolinString(String name, String maker, StringNote note, String material, double boughtPrice, double sellPrice) {
         super(name, maker, boughtPrice, sellPrice);
         this.note = note;
         this.material = material;
     }
 
     public String getNote() {
-        return note;
+        return note.getNoteName();
     }
 
     public String getMaterial() {

@@ -1,3 +1,4 @@
+import accessories.StringNote;
 import accessories.ViolinString;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,7 +11,7 @@ public class ViolinStringTest {
 
     @Before
     public void before(){
-        violinString = new ViolinString("Astrea 2433", "Astrea", "D", "Steel", 3.2, 4.75);
+        violinString = new ViolinString("Astrea 2433", "Astrea", StringNote.D, "Steel", 3.2, 4.75);
     }
 
     @Test
