@@ -9,6 +9,7 @@ public abstract class Instrument {
         this.colour = colour;
         this.material = material;
         this.maker = maker;
+        this.instrumentType = null;
     }
 
     public String getColour() {
@@ -17,6 +18,10 @@ public abstract class Instrument {
 
     public String getInstrumentType() {
         return instrumentType.getType();
+    }
+
+    public void setInstrumentType(InstrumentType instrumentType) {
+        this.instrumentType = instrumentType;
     }
 
     public String getMaterial() {
