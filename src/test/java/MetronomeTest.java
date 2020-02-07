@@ -1,5 +1,9 @@
+import accessories.Metronome;
+import accessories.MetronomeType;
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class MetronomeTest {
 
