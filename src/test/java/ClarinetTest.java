@@ -10,7 +10,7 @@ public class ClarinetTest {
 
     @Before
     public void before(){
-        clarinet = new Clarinet("Black", "Grenadilla", "Yamaha");
+        clarinet = new Clarinet("Black", "Grenadilla wood", "Yamaha");
     }
 
     @Test
@@ -20,7 +20,7 @@ public class ClarinetTest {
 
     @Test
     public void hasAMaterial(){
-        assertEquals("Grenadilla", clarinet.getMaterial());
+        assertEquals("Grenadilla wood", clarinet.getMaterial());
     }
 
     @Test
