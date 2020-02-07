@@ -7,4 +7,8 @@ public class Clarinet extends Instrument {
 
         setInstrumentType(InstrumentType.WOODWIND);
     }
+
+    public String playInstrument() {
+        return "Toot, toot, toot!";
+    }
 }

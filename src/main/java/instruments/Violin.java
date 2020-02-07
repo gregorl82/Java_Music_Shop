@@ -14,4 +14,8 @@ public class Violin extends Instrument {
     public int getNumberOfStrings() {
         return numberOfStrings;
     }
+
+    public String playInstrument() {
+        return "Pluck, pluck, pluck!";
+    }
 }

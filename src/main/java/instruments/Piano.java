@@ -20,4 +20,8 @@ public class Piano extends Instrument {
     public int getNumberOfKeys() {
         return numberOfKeys;
     }
+
+    public String playInstrument() {
+        return "Plink, plink, plink!";
+    }
 }

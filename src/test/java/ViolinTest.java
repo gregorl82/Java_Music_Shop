@@ -37,4 +37,9 @@ public class ViolinTest {
     public void hasANumberOfStrings(){
         assertEquals(4, violin.getNumberOfStrings());
     }
+
+    @Test
+    public void canPlayInstrument(){
+        assertEquals("Pluck, pluck, pluck!", violin.playInstrument());
+    }
 }

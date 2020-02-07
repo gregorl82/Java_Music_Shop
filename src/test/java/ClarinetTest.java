@@ -33,4 +33,9 @@ public class ClarinetTest {
         assertEquals("Woodwind", clarinet.getInstrumentType());
     }
 
+    @Test
+    public void canPlayInstrument(){
+        assertEquals("Toot, toot, toot!", clarinet.playInstrument());
+    }
+
 }
