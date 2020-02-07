@@ -49,4 +49,12 @@ public class ShopTest {
         assertEquals(1, shop.countStock());
     }
 
+    @Test
+    public void canCalculatePotentialProfit(){
+        shop.addStock(piano);
+        shop.addStock(sheetMusic);
+        shop.addStock(metronome);
+        assertEquals(556.0, shop.calculatePotentialProfit(), 0.01);
+    }
+
 }
