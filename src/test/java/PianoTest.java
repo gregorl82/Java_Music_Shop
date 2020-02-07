@@ -30,7 +30,7 @@ public class PianoTest {
 
     @Test
     public void hasAnInstrumentType(){
-        assertEquals("Percussion", piano.getInstrumentType());
+        assertEquals("Keyboard", piano.getInstrumentType());
     }
 
     @Test

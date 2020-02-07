@@ -10,7 +10,7 @@ public class Piano extends Instrument {
         this.pianoType = pianoType;
         this.numberOfKeys = numberOfKeys;
 
-        setInstrumentType(InstrumentType.PERCUSSION);
+        setInstrumentType(InstrumentType.KEYBOARD);
     }
 
     public String getPianoType() {
