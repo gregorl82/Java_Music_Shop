@@ -10,7 +10,7 @@ public class ViolinStringTest {
 
     @Before
     public void before(){
-        violinString = new ViolinString("Astrea 2433", "Astrea", "D", "Steel");
+        violinString = new ViolinString("Astrea 2433", "Astrea", "D", "Steel", 3.2, 4.75);
     }
 
     @Test
@@ -24,6 +24,22 @@ public class ViolinStringTest {
     }
 
     @Test
+    public void hasABoughtPrice(){
+        assertEquals(3.2, violinString.getBoughtPrice(), 0.00);
+    }
+
+    @Test
+    public void hasASellPrice(){
+        assertEquals(4.75, violinString.getSellPrice(), 0.00);
+    }
+
+    @Test
+    public void canSetSellPrice(){
+        violinString.setSellPrice(5.25);
+        assertEquals(5.25, violinString.getSellPrice(), 0.00);
+    }
+
+    @Test
     public void hasANote(){
         assertEquals("D", violinString.getNote());
     }
@@ -31,6 +47,12 @@ public class ViolinStringTest {
     @Test
     public void hasAMaterial(){
         assertEquals("Steel", violinString.getMaterial());
+    }
+
+    @Test
+    public void canGetDescription(){
+        String expected = "Name: Astrea 2433, Maker: Astrea, Note: D, Material: Steel, Price: £4.75";
+        assertEquals(expected, violinString.getDescription());
     }
 
 }
