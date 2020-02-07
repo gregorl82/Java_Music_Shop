@@ -1,8 +1,5 @@
 package instruments;
 
-import instruments.Instrument;
-import instruments.InstrumentType;
-
 public class Violin extends Instrument {
 
     private int numberOfStrings;

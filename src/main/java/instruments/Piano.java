@@ -1,8 +1,5 @@
 package instruments;
 
-import instruments.Instrument;
-import instruments.InstrumentType;
-
 public class Piano extends Instrument {
 
     private String pianoType;
